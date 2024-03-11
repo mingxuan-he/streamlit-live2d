@@ -28,8 +28,17 @@ lw19 = "https://cdn.jsdelivr.net/npm/live2d-widget-model-epsilon2_1@1.0.5/assets
 lw20 = "https://cdn.jsdelivr.net/npm/live2d-widget-model-rem@1.0.1/assets/rem.model.json"
 lw21 = "https://cdn.jsdelivr.net/npm/live2d-widget-model-nietzsche@1.0.5/assets/nietzche.model.json"
 
+# local models
+import pathlib
+hiyori = "http://localhost:3001/models/hiyori_vts/hiyori.model3.json"
+ceres = "http://localhost:3001/models/CeresFree/Ceres.model3.json"
+
+# Eikanya
+senko = "https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json"
+nerco = "https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/VenusScramble/playerunits/player_unit_00001/live2d/model.json"
+
+asuna_aws = "https://yuichan-live2d-models.s3.us-east-2.amazonaws.com/Asuna/asuna_04.model.json"
 
 st.title("Live2D Component")
 with st.container():
-    #my_component("live2d")
-    comp = live2d_viewer(modelPath=cubism4Model, key="live2d")
+    comp = live2d_viewer(modelPath=asuna_aws)

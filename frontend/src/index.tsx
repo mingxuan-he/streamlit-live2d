@@ -1,10 +1,10 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 import Live2DViewer from "./Live2DViewer"
 
-ReactDOM.render(
-    <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
+  <React.StrictMode>
     <Live2DViewer />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+  </React.StrictMode>
+);
